@@ -15,7 +15,9 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/jfltevzw/jfltevzw-vendor.mk)
+#   Pull from jfltespr, jflteusc and jfltevzw
+#   Use a .mk file here so I don't have to modify the vendor repos
+$(call inherit-product-if-exists, device/samsung/jfltecdma/jfltecdma-vendor.mk)
 
 # loki
 PRODUCT_PACKAGES += \
@@ -25,10 +27,10 @@ PRODUCT_PACKAGES += \
     recovery-transform.sh
 
 PRODUCT_COPY_FILES += \
-    device/samsung/jfltevzw/releasetools/loki.sh:install/bin/loki.sh
+    device/samsung/jfltecdma/releasetools/loki.sh:install/bin/loki.sh
 
 ## device overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltevzw/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltecdma/overlay
 
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)

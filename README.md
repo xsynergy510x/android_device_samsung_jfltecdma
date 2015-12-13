@@ -1,6 +1,6 @@
-Copyright 2013 - The CyanogenMod Project
+Copyright 2015 - The CyanogenMod Project
 
-Device configuration for Galaxy S4 (Verizon)
+Device configuration for Galaxy S4 CDMA variants (jfltespr, jflteusc, jfltevzw)
 =====================================
 
 Basic   | Spec Sheet
@@ -18,5 +18,3 @@ Display | 1080 x 1920 pixels, Super AMOLED
 Camera  | 13 MP, 4128 x 3096 pixels
 Release Date | May 2013
 
-
-![VZW Galaxy S4](http://wiki.cyanogenmod.org/images/thumb/6/6e/Jflte.png/321px-Jflte.png "VZW Galaxy S4")

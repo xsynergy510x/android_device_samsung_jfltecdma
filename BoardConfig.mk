@@ -24,10 +24,15 @@
 include device/samsung/jf-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/jfltevzw/BoardConfigVendor.mk
+-include vendor/samsung/jfltecdma/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := jfltevzw,jflte
+TARGET_OTA_ASSERT_DEVICE := jfltecri,jfltecsp,jfltespr,jflteusc,jfltevzw,jflte
 
 # loki
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jfltevzw/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jfltecdma/releasetools
+
+# Vendor init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_jfltecdma
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/jfltecdma/init/init_jfltecdma.cpp
