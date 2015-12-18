@@ -35,11 +35,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfltespr/proprietary/bin/efsks:$(SPR_INSTALL)/bin/efsks \
     vendor/samsung/jfltespr/proprietary/bin/ks:$(SPR_INSTALL)/bin/ks \
     vendor/samsung/jfltespr/proprietary/bin/qcks:$(SPR_INSTALL)/bin/qcks \
-    vendor/samsung/jflter970/proprietary/lib/libreference-ril.so:$(SPR_INSTALL)/lib/libreference-ril.so \
-    vendor/samsung/jflter970/proprietary/lib/libril.so:$(SPR_INSTALL)/lib/libril.so \
-    vendor/samsung/jflter970/proprietary/lib/libsec-ril.so:$(SPR_INSTALL)/lib/libsec-ril.so \
-    vendor/samsung/jflter970/proprietary/vendor/lib/libqmi.so:$(SPR_INSTALL)/vendor/lib/libqmi.so \
-    vendor/samsung/jflter970/proprietary/vendor/lib/libqmiservices.so:$(SPR_INSTALL)/vendor/lib/libqmiservices.so
+    vendor/samsung/jfltespr/proprietary/lib/libreference-ril.so:$(SPR_INSTALL)/lib/libreference-ril.so \
+    vendor/samsung/jfltespr/proprietary/lib/libril.so:$(SPR_INSTALL)/lib/libril.so \
+    vendor/samsung/jfltespr/proprietary/lib/libsec-ril.so:$(SPR_INSTALL)/lib/libsec-ril.so \
+    vendor/samsung/jfltespr/proprietary/vendor/lib/libqmi.so:$(SPR_INSTALL)/vendor/lib/libqmi.so \
+    vendor/samsung/jfltespr/proprietary/vendor/lib/libqmiservices.so:$(SPR_INSTALL)/vendor/lib/libqmiservices.so
 
 
 ## jfltevzw blobs
@@ -49,11 +49,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfltevzw/proprietary/bin/efsks:$(VZW_INSTALL)/bin/efsks \
     vendor/samsung/jfltevzw/proprietary/bin/ks:$(VZW_INSTALL)/bin/ks \
     vendor/samsung/jfltevzw/proprietary/bin/qcks:$(VZW_INSTALL)/bin/qcks \
-    vendor/samsung/jflter970/proprietary/lib/libreference-ril.so:$(VZW_INSTALL)/lib/libreference-ril.so \
-    vendor/samsung/jflter970/proprietary/lib/libril.so:$(VZW_INSTALL)/lib/libril.so \
-    vendor/samsung/jflter970/proprietary/lib/libsec-ril.so:$(VZW_INSTALL)/lib/libsec-ril.so \
-    vendor/samsung/jflter970/proprietary/vendor/lib/libqmi.so:$(VZW_INSTALL)/vendor/lib/libqmi.so \
-    vendor/samsung/jflter970/proprietary/vendor/lib/libqmiservices.so:$(VZW_INSTALL)/vendor/lib/libqmiservices.so \
+    vendor/samsung/jfltevzw/proprietary/lib/libreference-ril.so:$(VZW_INSTALL)/lib/libreference-ril.so \
+    vendor/samsung/jfltevzw/proprietary/lib/libril.so:$(VZW_INSTALL)/lib/libril.so \
+    vendor/samsung/jfltevzw/proprietary/lib/libsec-ril.so:$(VZW_INSTALL)/lib/libsec-ril.so \
+    vendor/samsung/jfltevzw/proprietary/vendor/lib/libqmi.so:$(VZW_INSTALL)/vendor/lib/libqmi.so \
+    vendor/samsung/jfltevzw/proprietary/vendor/lib/libqmiservices.so:$(VZW_INSTALL)/vendor/lib/libqmiservices.so \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b00:$(VZW_INSTALL)/etc/firmware/q6.b00 \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b01:$(VZW_INSTALL)/etc/firmware/q6.b01 \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b03:$(VZW_INSTALL)/etc/firmware/q6.b03 \
