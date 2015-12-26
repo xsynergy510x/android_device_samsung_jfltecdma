@@ -34,7 +34,7 @@
 #include "log.h"
 #include "util.h"
 
-void cdma_properties(const char* default_network)
+void cdma_properties(char default_network[])
 {
     property_set("DEVICE_PROVISIONED", "1");
     property_set("persist.eons.enabled", "false");
