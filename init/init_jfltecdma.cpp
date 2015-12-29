@@ -34,7 +34,7 @@
 #include "log.h"
 #include "util.h"
 
-void cdma_properties(char default_network[])
+void cdma_properties(const char* default_network)
 {
     property_set("DEVICE_PROVISIONED", "1");
     property_set("persist.eons.enabled", "false");
@@ -47,6 +47,13 @@ void cdma_properties(char default_network[])
     property_set("telephony.lteOnCdmaDevice", "1");
 }
 
+void gsm_properties()
+{
+    property_set("rild.libargs", "-d /dev/smd0");
+    property_set("rild.libpath", "/system/lib/libril-qc-qmi-1.so");
+    property_set("ro.telephony.default_network", "9");
+    property_set("telephony.lteOnGsmDevice", "1");
+}
 
 void vendor_load_properties()
 {
@@ -123,6 +130,41 @@ void vendor_load_properties()
         property_set("ro.product.device", "jfltevzw");
         property_set("ro.telephony.get_imsi_from_sim", "true");
     	property_set("ro.telephony.default_cdma_sub", "0");
+    } else if (strstr(bootloader, "I337M")) {
+        /* jfltecan */
+        gsm_properties();
+        property_set("ro.build.fingerprint", "samsung/jfltevl/jfltecan:4.2.2/JDQ39/I337MVLUAMDJ:user/release-keys");
+        property_set("ro.build.description", "jfltevl-user 4.2.2 JDQ39 I337MVLUAMDJ release-keys");
+        property_set("ro.product.model", "SGH-I337M");
+        property_set("ro.product.device", "jfltecan");
+    } else if (strstr(bootloader, "I337")) {
+        /* jflteatt */
+        gsm_properties();
+        property_set("ro.product.device", "jflteatt");
+        property_set("ro.product.model", "SAMSUNG-SGH-I337");
+        property_set("ro.build.fingerprint", "samsung/jflteuc/jflteatt:4.4.2/KOT49H/I337UCUFNB1:user/release-keys");
+        property_set("ro.build.description", "jflteuc-user 4.4.2 KOT49H I337UCUFNB1 release-keys");
+    } else if (strstr(bootloader, "M919") || strstr(bootloader, "S975L")) {
+        /* jfltetmo or SM-S975L */
+        gsm_properties();
+        property_set("ro.build.fingerprint", "samsung/jfltetmo/jfltetmo:4.3/JSS15J/M919UVUEMK2:user/release-keys");
+        property_set("ro.build.description", "jfltetmo-user 4.3 JSS15J M919UVUEMK2 release-keys");
+        property_set("ro.product.model", "SGH-M919");
+        property_set("ro.product.device", "jfltetmo");
+    } else if (strstr(bootloader, "I9505G")) {
+        /* jgedlte */
+        gsm_properties();
+        property_set("ro.build.fingerprint", "samsung/jgedlteue/jgedlte:4.4.3/KTU84L.S003/140503:user/release-keys");
+        property_set("ro.build.description", "jgedlteue-user 4.4.3 KTU84L.S003 140503 release-keys");
+        property_set("ro.product.model", "GT-I9505G");
+        property_set("ro.product.device", "jgedlte");
+    } else if (strstr(bootloader, "I9505")) {
+        /* jfltexx */
+        gsm_properties();
+        property_set("ro.build.fingerprint", "samsung/jfltexx/jflte:4.2.2/JDQ39/I9505XXUAMDE:user/release-keys");
+        property_set("ro.build.description", "jfltexx-user 4.2.2 JDQ39 I9505XXUAMDE release-keys");
+        property_set("ro.product.model", "GT-I9505");
+        property_set("ro.product.device", "jfltexx");
     }
 
     property_get("ro.product.device", device);
