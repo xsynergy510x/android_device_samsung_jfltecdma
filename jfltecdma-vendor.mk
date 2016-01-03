@@ -60,12 +60,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b04:$(VZW_INSTALL)/etc/firmware/q6.b04 \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b05:$(VZW_INSTALL)/etc/firmware/q6.b05 \
     vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.b06:$(VZW_INSTALL)/etc/firmware/q6.b06 \
-    vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.mdt:$(VZW_INSTALL)/etc/firmware/q6.mdt \
-    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b00:$(VZW_INSTALL)/etc/firmware/vidc.b00 \
-    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b01:$(VZW_INSTALL)/etc/firmware/vidc.b01 \
-    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b02:$(VZW_INSTALL)/etc/firmware/vidc.b02 \
-    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.b03:$(VZW_INSTALL)/etc/firmware/vidc.b03 \
-    vendor/samsung/jfltevzw/proprietary/etc/firmware/vidc.mdt:$(VZW_INSTALL)/etc/firmware/vidc.mdt
+    vendor/samsung/jfltevzw/proprietary/etc/firmware/q6.mdt:$(VZW_INSTALL)/etc/firmware/q6.mdt
 
 
 ## Common CDMA blobs for jf
